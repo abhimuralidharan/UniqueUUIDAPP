@@ -8,20 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		18FB1DDF1EFAD92100C6F69C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FB1DDE1EFAD92100C6F69C /* AppDelegate.swift */; };
-		18FB1DE11EFAD92100C6F69C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FB1DE01EFAD92100C6F69C /* ViewController.swift */; };
 		18FB1DE41EFAD92100C6F69C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18FB1DE21EFAD92100C6F69C /* Main.storyboard */; };
 		18FB1DE61EFAD92100C6F69C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18FB1DE51EFAD92100C6F69C /* Assets.xcassets */; };
 		18FB1DE91EFAD92100C6F69C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18FB1DE71EFAD92100C6F69C /* LaunchScreen.storyboard */; };
+		18FB1DF61EFAD95900C6F69C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FB1DF11EFAD95900C6F69C /* ViewController.swift */; };
+		18FB1DF71EFAD95900C6F69C /* SAMKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FB1DF31EFAD95900C6F69C /* SAMKeychain.m */; };
+		18FB1DF81EFAD95900C6F69C /* SAMKeychainQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FB1DF51EFAD95900C6F69C /* SAMKeychainQuery.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		18FB1DDB1EFAD92100C6F69C /* UniqueUUIDAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UniqueUUIDAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18FB1DDE1EFAD92100C6F69C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		18FB1DE01EFAD92100C6F69C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		18FB1DE31EFAD92100C6F69C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18FB1DE51EFAD92100C6F69C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18FB1DE81EFAD92100C6F69C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18FB1DEA1EFAD92100C6F69C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18FB1DF01EFAD95800C6F69C /* UniqueUUIDAPP-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UniqueUUIDAPP-Bridging-Header.h"; sourceTree = "<group>"; };
+		18FB1DF11EFAD95900C6F69C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		18FB1DF21EFAD95900C6F69C /* SAMKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMKeychain.h; sourceTree = "<group>"; };
+		18FB1DF31EFAD95900C6F69C /* SAMKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMKeychain.m; sourceTree = "<group>"; };
+		18FB1DF41EFAD95900C6F69C /* SAMKeychainQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMKeychainQuery.h; sourceTree = "<group>"; };
+		18FB1DF51EFAD95900C6F69C /* SAMKeychainQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMKeychainQuery.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +62,16 @@
 			isa = PBXGroup;
 			children = (
 				18FB1DDE1EFAD92100C6F69C /* AppDelegate.swift */,
-				18FB1DE01EFAD92100C6F69C /* ViewController.swift */,
 				18FB1DE21EFAD92100C6F69C /* Main.storyboard */,
+				18FB1DF11EFAD95900C6F69C /* ViewController.swift */,
+				18FB1DF21EFAD95900C6F69C /* SAMKeychain.h */,
+				18FB1DF31EFAD95900C6F69C /* SAMKeychain.m */,
+				18FB1DF41EFAD95900C6F69C /* SAMKeychainQuery.h */,
+				18FB1DF51EFAD95900C6F69C /* SAMKeychainQuery.m */,
 				18FB1DE51EFAD92100C6F69C /* Assets.xcassets */,
 				18FB1DE71EFAD92100C6F69C /* LaunchScreen.storyboard */,
 				18FB1DEA1EFAD92100C6F69C /* Info.plist */,
+				18FB1DF01EFAD95800C6F69C /* UniqueUUIDAPP-Bridging-Header.h */,
 			);
 			path = UniqueUUIDAPP;
 			sourceTree = "<group>";
@@ -97,6 +109,7 @@
 					18FB1DDA1EFAD92100C6F69C = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = D5248MR3YC;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -137,7 +150,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18FB1DE11EFAD92100C6F69C /* ViewController.swift in Sources */,
+				18FB1DF81EFAD95900C6F69C /* SAMKeychainQuery.m in Sources */,
+				18FB1DF61EFAD95900C6F69C /* ViewController.swift in Sources */,
+				18FB1DF71EFAD95900C6F69C /* SAMKeychain.m in Sources */,
 				18FB1DDF1EFAD92100C6F69C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,11 +278,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = D5248MR3YC;
 				INFOPLIST_FILE = UniqueUUIDAPP/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Abhilash.UniqueUUIDAPP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "UniqueUUIDAPP/UniqueUUIDAPP-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -276,11 +295,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = D5248MR3YC;
 				INFOPLIST_FILE = UniqueUUIDAPP/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Abhilash.UniqueUUIDAPP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "UniqueUUIDAPP/UniqueUUIDAPP-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
